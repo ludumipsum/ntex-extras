@@ -14,11 +14,11 @@ pub use charset::Charset;
 pub use common::*;
 pub use content_disposition::*;
 pub use entity::EntityTag;
-use http::HeaderValue;
 pub use http_date::HttpDate;
 pub use raw::{Raw, RawLike};
 
 use self::sealed::HeaderClone;
+use http::HeaderValue;
 
 /// A trait for any object that will represent a header field and value.
 ///

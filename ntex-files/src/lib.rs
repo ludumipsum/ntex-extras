@@ -29,10 +29,11 @@ use ntex::web::{self, FromRequest, HttpRequest, HttpResponse, WebRequest, WebRes
 use percent_encoding::{utf8_percent_encode, CONTROLS};
 use v_htmlescape::escape as escape_html_entity;
 
-mod error;
-mod file_header;
 mod named;
 mod range;
+
+pub mod error;
+pub mod file_header;
 
 use self::error::{FilesError, UriSegmentError};
 pub use crate::named::NamedFile;
